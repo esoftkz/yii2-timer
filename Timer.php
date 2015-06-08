@@ -38,15 +38,13 @@ class Timer extends Widget
 		$timeDiff = ($endTimeStamp - $startTimeStamp) > 0 ? $endTimeStamp - $startTimeStamp : 0;
 		
 		$numberDays = intval($timeDiff/86400);  // 86400 seconds in one day
-		$dayWord = $numberDays>4?"дней":$numberDays>1?'дня':$numberDays>0?'день':"дней";
-		
-		
-		
+		$dayWord = $numberDays>4?"дней":($numberDays>1?'дня':($numberDays>0?'день':"дней"));
+			
 		$numberHours = intval($timeDiff%86400/3600); 
-		$hourWord = $numberHours>4?"часов":$numberHours>1?"часа":$numberHours>0?'час':"часов";
+		$hourWord = $numberHours>4?"часов":($numberHours>1?"часа":($numberHours>0?'час':"часов"));
 		
 		$numberMin = intval($timeDiff%86400%3600/60);
-		$minWord = $minWord>4?"минут":$minWord>1?"минуты":$minWord>0?'минута':"минут";
+		$minWord = $minWord>4?"минут":($minWord>1?"минуты":($minWord>0?'минута':"минут"));
 		
 	
         echo '<ul>
