@@ -1,0 +1,34 @@
+{
+    "name": "esoftkz/yii2-timer",
+    "description": "CKEditor widget for Yii2.",
+    "type": "yii2-extension",
+    "keywords": [
+        "esoftkz",
+        "yii",
+        "yii2",
+        "yii 2",
+        "extension",
+        "widget",
+        "timer"
+    ],
+
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "esoftkz\\timer\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "asset-installer-paths": {
+            "bower-asset-library": "vendor/bower"
+        }
+    }
+}
