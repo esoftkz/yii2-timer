@@ -5,7 +5,7 @@ Renders a <a href="http://codepen.io/rendro/pen/qazCG">Timer</a> plugin widget.
 Installation:
 
 ```php
-composer require esoftkz/timer
+"esoftkz/yii2-timer": "~1.0@dev"
 ```
 -----------
 
